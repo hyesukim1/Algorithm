@@ -1,9 +1,11 @@
 a = int(input())
-b = input()
+b = str(input())
 
-c1 = a * int(b[2])
-c2 = a * int(b[1])
-c3 = a * int(b[0])
-c4 = a*int(b)
+A = a*int(b[2])
+B = a*int(b[1])
+C = a*int(b[0])
 
-print(c1, c2, c3, c4)
+print(A)
+print(B)
+print(C)
+print(a*int(b))
