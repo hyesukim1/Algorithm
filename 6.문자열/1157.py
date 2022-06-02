@@ -1,19 +1,4 @@
 # 단어 공부
-'''
-import collections
-s = input()
-up = s.upper()
-list_up = list(up)
-
-cnt = collections.Counter()
-
-for i in list_up:
-    cnt[i] += 1
-
-a = cnt.most_common(n=1)
-print(a[0])
-'''
-
 s = input().upper()
 unique_s = list(set(s))
 
