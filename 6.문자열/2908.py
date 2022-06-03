@@ -7,7 +7,6 @@ num = []
 for i in n:
     b = i[::-1]
     num.append(b)
-print(num)
     
 if int(num[0]) > int(num[1]):
     print(num[0])
