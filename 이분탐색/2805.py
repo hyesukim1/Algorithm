@@ -2,18 +2,21 @@
 
 N, M = map(int, input().split())
 tree = list(map(int, input().split()))
-start, end = 1, max(tree)
+tree.sort()
+start, end = 0, max(tree)
+ans = 0
 
 while start <= end:
+    cnt = 0
     mid = (start + end) // 2
-    
-    log = 0
     for i in tree:
         if i >= mid:
-            log += i - mid
-        
-    if log >= M:
+            cnt += i - mid
+            if cnt > M:
+                break
+    if cnt >= M:
+        ans = mid
         start = mid + 1
     else:
         end = mid - 1
-print(end)
+print(ans)
