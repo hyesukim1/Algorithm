@@ -7,6 +7,7 @@ def bfs(v):
     q.append(v)
     visited[v] = 1
     while q:
+        # queue에서 맨 왼쪽의 값을 빼서 v로 지정
         v = q.popleft()
         print(v, end=" ")
         for i in range(1, node+1):
