@@ -24,7 +24,7 @@ else:
     idx = len(list) // 2 + 1
     median = list[idx]
     
-print(median)
+# print(median)
 
 # 최빈값
 
